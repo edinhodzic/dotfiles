@@ -9,5 +9,6 @@ brew_install jq
 brew_cask_install intellij-idea
 brew_cask_install docker
 brew_cask_install postman
+brew_cask_install fork
 
 curl -s "https://get.sdkman.io" | bash

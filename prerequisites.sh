@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [[ $(brew --version) ]] ; then
+if type brew &> /dev/null; then
   echo "Brew installed so attempting update"
   brew update
 else

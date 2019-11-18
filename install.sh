@@ -12,7 +12,7 @@ if ! type git &> /dev/null; then
   brew install git
 fi
 
-git clone git@github.com:edinhodzic/dotfiles.git ~/dotfiles
+git clone https://github.com/edinhodzic/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 
 ./macos/defaults.sh

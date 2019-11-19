@@ -16,5 +16,5 @@ git clone https://github.com/edinhodzic/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 
 ./macos/defaults.sh
-./tools.sh
 ./apps.sh
+./tools.sh

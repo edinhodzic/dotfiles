@@ -19,6 +19,7 @@ cd ~/dotfiles
 ./macos.sh
 ./apps.sh
 ./tools.sh
+./zsh.sh
 
 # let the human check the output of this
 HOMEBREW_NO_AUTO_UPDATE=1 brew doctor

@@ -1,5 +1,6 @@
 echo 'setting macos defaults'
 defaults write .GlobalPreferences AppleInterfaceStyle Dark
+defaults write NSGlobalDomain com.apple.trackpad.scaling -int 2
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -int 1
 defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1

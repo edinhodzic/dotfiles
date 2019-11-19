@@ -1,6 +1,6 @@
 #!/bin/sh
 
-brew cask install \
+HOMEBREW_NO_AUTO_UPDATE=1 brew cask install \
 slack \
 sublime-text \
 iterm2 \

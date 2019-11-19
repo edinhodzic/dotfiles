@@ -8,3 +8,5 @@ defaults write com.apple.dock autohide -int 1
 
 # top right hot corner starts screensaver
 defaults write com.apple.dock wvous-tr-corner -int 5
+
+# TODO change iterm > profiles > colors > preset to "Pastel (Dark Background)"

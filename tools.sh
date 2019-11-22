@@ -7,7 +7,9 @@ docker \
 postman \
 fork \
 tunnelblick \
-spectacle
+spectacle \
+authy \
+xmind
 
 HOMEBREW_NO_AUTO_UPDATE=1 brew install \
 scala \

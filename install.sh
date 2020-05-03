@@ -16,10 +16,10 @@ git clone https://github.com/edinhodzic/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 
 # set a bunch of macos defaults and install apps and tools
-./macos.sh
+./zsh.sh
 ./apps.sh
 ./tools.sh
-./zsh.sh
+./macos.sh
 
 rm -rf dotfiles
 

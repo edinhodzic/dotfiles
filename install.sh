@@ -21,5 +21,7 @@ cd ~/dotfiles
 ./tools.sh
 ./zsh.sh
 
+rm -rf dotfiles
+
 # let the human check the output of this
 HOMEBREW_NO_AUTO_UPDATE=1 brew doctor

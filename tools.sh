@@ -1,7 +1,9 @@
 #!/bin/sh
 
+curl -s "https://get.sdkman.io" | bash
+sdk install java scala sbt
+
 HOMEBREW_NO_AUTO_UPDATE=1 brew cask install \
-java \
 intellij-idea \
 docker \
 postman \
@@ -10,10 +12,7 @@ tunnelblick \
 spectacle
 
 HOMEBREW_NO_AUTO_UPDATE=1 brew install \
-scala \
-sbt \
 jq \
 awscli \
-httpie
-
-curl -s "https://get.sdkman.io" | bash
+httpie \
+gpg-suite

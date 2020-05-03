@@ -7,6 +7,7 @@ iterm2 \
 spotify \
 google-chrome \
 lastpass \
-aerial 
+aerial \
+whatsapp
 
 defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName Aerial path ~/Library/Screen\ Savers/Aerial.saver/ type 0

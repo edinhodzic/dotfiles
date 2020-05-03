@@ -6,7 +6,7 @@ sublime-text \
 iterm2 \
 spotify \
 google-chrome \
-lastpass \
+1password \
 aerial \
 whatsapp
 

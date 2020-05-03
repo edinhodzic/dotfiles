@@ -1,6 +1,7 @@
 #!/bin/sh
 
 curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk install java scala sbt
 
 HOMEBREW_NO_AUTO_UPDATE=1 brew cask install \

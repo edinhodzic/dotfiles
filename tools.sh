@@ -18,4 +18,5 @@ HOMEBREW_NO_AUTO_UPDATE=1 brew install \
 jq \
 awscli \
 httpie \
+newman \
 gpg-suite

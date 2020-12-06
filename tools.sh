@@ -24,7 +24,7 @@ newman \
 gpg-suite
 
 # https://pip.pypa.io/en/stable/installing/
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+#curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 
 # https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-macos
-CFLAGS=-Qunused-arguments CPPFLAGS=-Qunused-arguments pip install --user ansible
+#CFLAGS=-Qunused-arguments CPPFLAGS=-Qunused-arguments pip install --user ansible

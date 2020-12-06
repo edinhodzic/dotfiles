@@ -5,6 +5,7 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk install java
 sdk install scala
 sdk install sbt
+sdk install dotty
 
 HOMEBREW_NO_AUTO_UPDATE=1 brew cask install \
 intellij-idea \

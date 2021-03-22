@@ -7,7 +7,7 @@ sdk install scala
 sdk install sbt
 sdk install dotty
 
-HOMEBREW_NO_AUTO_UPDATE=1 brew cask install \
+HOMEBREW_NO_AUTO_UPDATE=1 brew install --cask \
 intellij-idea \
 visual-studio-code \
 docker \
@@ -22,6 +22,10 @@ awscli \
 httpie \
 newman \
 gpg-suite
+
+#HOMEBREW_NO_AUTO_UPDATE=1 brew install \
+#hashicorp/tap/terraform \
+#terragrunt
 
 # https://pip.pypa.io/en/stable/installing/
 #curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py

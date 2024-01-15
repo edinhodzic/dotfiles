@@ -6,29 +6,28 @@ sdk install java
 sdk install scala
 sdk install sbt
 sdk install dotty
+sdk install kotlin
+sdk install gradle
 
 HOMEBREW_NO_AUTO_UPDATE=1 brew install --cask \
 intellij-idea \
-visual-studio-code \
 docker \
 postman \
 fork \
 tunnelblick \
-spectacle
+rectangle
 
 HOMEBREW_NO_AUTO_UPDATE=1 brew install \
 jq \
 awscli \
 httpie \
 newman \
-gpg-suite
+docker-compose \
+gpg-suite \
+adr-tools \
+tfsec \
+trivy \
+terraform \
+terragrunt
 
-#HOMEBREW_NO_AUTO_UPDATE=1 brew install \
-#hashicorp/tap/terraform \
-#terragrunt
-
-# https://pip.pypa.io/en/stable/installing/
-#curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-
-# https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-macos
-#CFLAGS=-Qunused-arguments CPPFLAGS=-Qunused-arguments pip install --user ansible
+# TOTO prowler

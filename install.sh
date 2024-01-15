@@ -11,17 +11,16 @@ if ! type git &> /dev/null; then
   HOMEBREW_NO_AUTO_UPDATE=1 brew install git
 fi
 
-# with prerequisites in place, get the dotfiles
+# install apps, tools and set a bunch of macos defaults
 git clone https://github.com/edinhodzic/dotfiles.git ~/dotfiles
 cd ~/dotfiles
-
-# set a bunch of macos defaults and install apps and tools
 ./zsh.sh
 ./apps.sh
 ./tools.sh
 ./macos.sh
-
 rm -rf ~/dotfiles
 
-# let the human check the output of this
+# tidy up
+HOMEBREW_NO_AUTO_UPDATE=1 brew upgrade
+HOMEBREW_NO_AUTO_UPDATE=1 brew cleanup
 HOMEBREW_NO_AUTO_UPDATE=1 brew doctor

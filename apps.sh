@@ -8,6 +8,11 @@ spotify \
 google-chrome \
 1password \
 aerial \
-whatsapp
+whatsapp \
+nordvpn \
+avast-security \
+philips-hue-sync \
+sonos \
+zoom
 
 defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName Aerial path ~/Library/Screen\ Savers/Aerial.saver/ type 0

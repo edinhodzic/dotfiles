@@ -5,7 +5,7 @@ slack \
 sublime-text \
 iterm2 \
 spotify \
-google-chrome \
+brave-browser \
 1password \
 aerial \
 whatsapp \
@@ -14,5 +14,7 @@ avast-security \
 philips-hue-sync \
 sonos \
 zoom
+
+# cloudflare-warp
 
 defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName Aerial path ~/Library/Screen\ Savers/Aerial.saver/ type 0

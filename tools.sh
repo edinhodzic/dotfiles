@@ -15,7 +15,7 @@ docker \
 postman \
 fork \
 tunnelblick \
-rectangle
+spectacle
 
 HOMEBREW_NO_AUTO_UPDATE=1 brew install \
 jq \
@@ -30,4 +30,8 @@ trivy \
 terraform \
 terragrunt
 
-# TOTO prowler
+
+brew tap cloudflare/cloudflare
+brew install cloudflare/cloudflare/cf-terraforming
+
+# TODO prowler, Cursor Pro mouse thing

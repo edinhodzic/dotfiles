@@ -5,7 +5,7 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk install java
 sdk install scala
 sdk install sbt
-sdk install dotty
+# sdk install dotty
 sdk install kotlin
 sdk install gradle
 

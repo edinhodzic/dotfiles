@@ -9,5 +9,12 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 
 # TODO symlink own ~/.zshrc
 # TODO check plugins in ~/.zshrc
-# TODO ensure ~/.zshrc contains "plugins=(git sublime ...)"
+# TODO ensure ~/.zshrc contains...
+# plugins=(
+#   git
+#   zsh-syntax-highlighting
+#   zsh-autosuggestions
+#   sublime
+#   z
+# )
 # TODO don't forget APPEND_HISTORY option

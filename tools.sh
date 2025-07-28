@@ -51,7 +51,7 @@ echo 'Tools (3/3): Installing general utilities'
 echo '-----------------------------------------'
 
 HOMEBREW_NO_AUTO_UPDATE=1 brew install --cask \
-spectacle
+rectangle
 
 HOMEBREW_NO_AUTO_UPDATE=1 brew install \
 gpg-suite \

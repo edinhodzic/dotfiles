@@ -14,7 +14,7 @@ intellij-idea \
 cursor \
 docker \
 postman \
-datagrip \
+#datagrip \
 fork \
 spectacle \
 cookiecutter
@@ -36,7 +36,7 @@ yarn
 brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
 
-brew tap cloudflare/cloudflare
-brew install cloudflare/cloudflare/cf-terraforming
+#brew tap cloudflare/cloudflare
+#brew install cloudflare/cloudflare/cf-terraforming
 
 # TODO prowler, Cursor Pro mouse thing

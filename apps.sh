@@ -7,6 +7,5 @@ iterm2 \
 spotify \
 brave-browser \
 1password \
-aerial \
-avast-security \
+#avast-security \ sophos-home instead?
 zoom

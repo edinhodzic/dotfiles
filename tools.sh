@@ -1,5 +1,6 @@
 #!/bin/sh
 
+echo ""
 echo '-----------------------------------------'
 echo 'Tools (1/3): Installing development tools'
 echo '-----------------------------------------'

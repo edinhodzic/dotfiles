@@ -1,5 +1,6 @@
 #!/bin/sh
 
+echo ""
 echo '-----------------------------------'
 echo 'Apps (1/1): Installing general apps'
 echo '-----------------------------------'

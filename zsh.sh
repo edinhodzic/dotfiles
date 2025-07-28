@@ -1,5 +1,6 @@
 #!/bin/sh
 
+echo ""
 echo '---------------------------------'
 echo 'Zsh (1/3): Installing Zsh plugins'
 echo '---------------------------------'

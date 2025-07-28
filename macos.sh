@@ -1,3 +1,6 @@
+#!/bin/sh
+
+echo ""
 echo '----------------------------------------------------------------------'
 echo 'MacOS (1/2): Creating backup of current settings before making changes'
 echo '----------------------------------------------------------------------'

@@ -1,5 +1,6 @@
 #!/bin/sh
 
+echo ""
 echo '------------------------------------------------------'
 echo 'Install (1/3): Installing prerequisites (brew and git)'
 echo '------------------------------------------------------'

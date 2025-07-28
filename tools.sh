@@ -16,7 +16,6 @@ docker \
 postman \
 datagrip \
 fork \
-# tunnelblick \
 spectacle \
 cookiecutter
 

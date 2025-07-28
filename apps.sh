@@ -8,13 +8,5 @@ spotify \
 brave-browser \
 1password \
 aerial \
-whatsapp \
-nordvpn \
 avast-security \
-philips-hue-sync \
-sonos \
 zoom
-
-# cloudflare-warp
-
-defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName Aerial path ~/Library/Screen\ Savers/Aerial.saver/ type 0

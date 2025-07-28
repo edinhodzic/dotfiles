@@ -18,6 +18,9 @@ cd ~/dotfiles
 ./apps.sh
 ./tools.sh
 ./macos.sh
+
+# Optional: run ./personal.sh to install personal apps (WhatsApp, NordVPN, Philips Hue Sync, Sonos)
+
 rm -rf ~/dotfiles
 
 # tidy up

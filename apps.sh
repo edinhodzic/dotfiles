@@ -10,5 +10,5 @@ sublime-text \
 iterm2 \
 brave-browser \
 1password \
-#avast-security \ sophos-home instead?
 zoom
+#avast-security \ sophos-home instead?

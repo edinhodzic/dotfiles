@@ -1,6 +1,8 @@
 #!/bin/sh
 
-echo 'Setting up zsh and Oh My Zsh...'
+echo '---------------------------------'
+echo 'Zsh (1/2): Installing Zsh plugins'
+echo '---------------------------------'
 
 # Install Oh My Zsh (zsh is already default on modern macOS)
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
@@ -16,7 +18,10 @@ if [ ! -d "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting" ]; then
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 fi
 
-# Configure .zshrc with desired plugins
+echo '----------------------------------'
+echo 'Zsh (2/2): Configuring Zsh plugins'
+echo '----------------------------------'
+
 if [ -f "$HOME/.zshrc" ]; then
   # Backup existing .zshrc
   cp "$HOME/.zshrc" "$HOME/.zshrc.backup"
@@ -31,9 +36,9 @@ if [ -f "$HOME/.zshrc" ]; then
     echo "setopt APPEND_HISTORY" >> "$HOME/.zshrc"
   fi
 
+  # Apply Zsh updates
   source ~/.zshrc
   
-  echo 'Zsh configuration updated.'
 else
   echo 'Warning: .zshrc not found. Oh My Zsh installation may have failed.'
 fi

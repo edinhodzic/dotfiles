@@ -21,8 +21,7 @@ intellij-idea \
 cursor \
 docker \
 postman \
-fork \
-cookiecutter
+fork
 # datagrip
 
 HOMEBREW_NO_AUTO_UPDATE=1 brew install \
@@ -30,7 +29,8 @@ jq \
 httpie \
 docker-compose \
 adr-tools \
-yarn
+yarn \
+cookiecutter
 # newman \
 
 echo '------------------------------------------------'

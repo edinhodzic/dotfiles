@@ -14,3 +14,11 @@ curl -fsSL https://raw.githubusercontent.com/edinhodzic/dotfiles/main/personal.s
 
 Or manually run `./personal.sh` if you've cloned the repository.
 
+## macOS Settings Backup
+
+The dotfiles automatically backup your current macOS settings before making changes. To restore previous settings:
+
+```bash
+bash ~/.dotfiles-backup/20240115_143022/restore_defaults.sh
+```
+

@@ -34,7 +34,6 @@ backup_default() {
 # Backup current settings
 backup_default "NSGlobalDomain" "AppleInterfaceStyle" "Dark Mode"
 backup_default "NSGlobalDomain" "com.apple.trackpad.scaling" "Trackpad sensitivity"
-backup_default "com.apple.driver.AppleBluetoothMultitouch.trackpad" "TrackpadThreeFingerDrag" "Three-finger drag"
 backup_default "com.apple.driver.AppleBluetoothMultitouch.trackpad" "Clicking" "Tap-to-click"
 backup_default "NSGlobalDomain" "com.apple.mouse.tapBehavior" "Mouse tap behavior"
 backup_default "com.apple.dock" "autohide" "Dock autohide"
@@ -50,14 +49,17 @@ echo '---------------------------------------------'
 echo 'MacOS (2/2): Overriding default MacOS options'
 echo '---------------------------------------------'
 
+# Things wanted in here but not quite working with defaults command
+# - Enable three-finger drag
+#   - defaults write com.apple.AppleMultitouchTrackpad "TrackpadThreeFingerDrag" -bool "false"
+#   - defaults write com.apple.AppleMultitouchTrackpad "Dragging" -bool "false"
+
+
 # Enable Dark Mode
 defaults write NSGlobalDomain AppleInterfaceStyle Dark
 
 # Increase trackpad sensitivity (0=slow, 3=fast)
 defaults write NSGlobalDomain com.apple.trackpad.scaling -int 3
-
-# Enable three-finger drag
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -int 1
 
 # Enable tap-to-click for trackpad
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true

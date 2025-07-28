@@ -26,19 +26,20 @@ backup_default() {
         echo "defaults write \"$domain\" \"$key\" \"$current_value\"" >> "$BACKUP_DIR/restore_defaults.sh"
         echo "$description: $current_value" >> "$BACKUP_DIR/current_values.txt"
     else
-        echo "# $description was not set (using system default)" >> "$BACKUP_DIR/restore_defaults.sh"
-        echo "$description: [NOT SET - system default]" >> "$BACKUP_DIR/current_values.txt"
+        echo "# $description was not set" >> "$BACKUP_DIR/restore_defaults.sh"
+        echo "$description: (not set)" >> "$BACKUP_DIR/current_values.txt"
     fi
 }
 
-# Backup all the defaults we're going to change
+# Backup current settings
 backup_default "NSGlobalDomain" "AppleInterfaceStyle" "Dark Mode"
-backup_default "NSGlobalDomain" "com.apple.trackpad.scaling" "Trackpad Sensitivity"
-backup_default "com.apple.menuextra.battery" "ShowPercent" "Battery Percentage"
-backup_default "com.apple.driver.AppleBluetoothMultitouch.trackpad" "TrackpadThreeFingerDrag" "Three-finger Drag"
+backup_default "NSGlobalDomain" "com.apple.trackpad.scaling" "Trackpad sensitivity"
+backup_default "com.apple.driver.AppleBluetoothMultitouch.trackpad" "TrackpadThreeFingerDrag" "Three-finger drag"
 backup_default "com.apple.driver.AppleBluetoothMultitouch.trackpad" "Clicking" "Tap-to-click"
-backup_default "com.apple.dock" "autohide" "Dock Autohide"
-backup_default "com.apple.dock" "wvous-tr-corner" "Hot Corner Top-Right"
+backup_default "NSGlobalDomain" "com.apple.mouse.tapBehavior" "Mouse tap behavior"
+backup_default "com.apple.dock" "autohide" "Dock autohide"
+backup_default "com.apple.dock" "wvous-tr-corner" "Hot corner top-right"
+backup_default "com.apple.dock" "wvous-tr-modifier" "Hot corner top-right modifier"
 
 # Make the restore script executable
 chmod +x "$BACKUP_DIR/restore_defaults.sh"
@@ -53,10 +54,7 @@ echo '---------------------------------------------'
 defaults write NSGlobalDomain AppleInterfaceStyle Dark
 
 # Increase trackpad sensitivity (0=slow, 3=fast)
-defaults write NSGlobalDomain com.apple.trackpad.scaling -int 2
-
-# Show battery percentage in menu bar
-defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+defaults write NSGlobalDomain com.apple.trackpad.scaling -int 3
 
 # Enable three-finger drag
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -int 1
@@ -69,8 +67,9 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 # Auto-hide dock
 defaults write com.apple.dock autohide -bool true
 
-# Set top-right hot corner to start screensaver
+# Enable hot corner (top-right) for screensaver
 defaults write com.apple.dock wvous-tr-corner -int 5
+defaults write com.apple.dock wvous-tr-modifier -int 0
 
 echo ""
 echo 'MacOS defaults applied!'

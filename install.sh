@@ -35,6 +35,10 @@ echo 'Install (3/3): Tidying up and finishing'
 echo '---------------------------------------'
 
 rm -rf ~/dotfiles
+
+
+# Change to home directory before removing dotfiles to avoid "current working directory must exist" error for brew commands
+cd ~
 HOMEBREW_NO_AUTO_UPDATE=1 brew upgrade
 HOMEBREW_NO_AUTO_UPDATE=1 brew cleanup
 HOMEBREW_NO_AUTO_UPDATE=1 brew doctor

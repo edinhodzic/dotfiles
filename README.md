@@ -45,5 +45,5 @@ Apps are installed but you'll need to configure them manually:
 - set up antivirus
 - sign into development tools
 - regenerate ssh key for github
-- import [iterm-profile.json](iterm-profile.json) into iTerm
+- import exported config from various `config/*` files, into their corresponding apps
 - etc.

@@ -41,8 +41,9 @@ rm -rf ~/.dotfiles-backup
 # End Game
 
 Apps are installed but you'll need to configure them manually:
-- log into your VPN provider
-- set up your antivirus
+- log into VPN provider
+- set up antivirus
 - sign into development tools
 - regenerate ssh key for github
+- import [iterm-profile.json](iterm-profile.json) into iTerm
 - etc.

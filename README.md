@@ -40,4 +40,9 @@ rm -rf ~/.dotfiles-backup
 
 # End Game
 
-Apps are installed but you'll need to configure them manually; log into your VPN provider, set up your antivirus, sign into development tools, etc.
+Apps are installed but you'll need to configure them manually:
+- log into your VPN provider
+- set up your antivirus
+- sign into development tools
+- regenerate ssh key for github
+- etc.
